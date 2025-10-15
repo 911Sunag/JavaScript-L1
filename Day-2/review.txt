@@ -1,0 +1,140 @@
+Common Arithmetic Operations
+Addition Operator: This operator (+) is used to calculate the sum of two or more numbers.
+Subtraction Operator: This operator (-) is used to calculate the difference between two numbers.
+Multiplication Operator: This operator (*) is used to calculate the product of two or more numbers.
+Division Operator: This operator (/) is used to calculate the quotient between two numbers
+Division By Zero: If you try to divide by zero, JavaScript will return Infinity.
+Remainder Operator: This operator(%) returns the remainder of a division.
+Exponentiation Operator: This operator (**) raises one number to the power of another.
+
+const result = 5 + '10';
+
+console.log(result); // 510
+console.log(typeof result); // string
+
+const subtractionResult = '10' - 5;
+console.log(subtractionResult); // 5
+console.log(typeof subtractionResult); // number
+
+const multiplicationResult = '10' * 2;
+console.log(multiplicationResult); // 20
+console.log(typeof multiplicationResult); // number
+
+const divisionResult = '20' / 2;
+console.log(divisionResult); // 10
+console.log(typeof divisionResult); // number
+
+const result1 = null + 5;
+console.log(result1); // 5
+console.log(typeof result1); // number
+
+const result2 = undefined + 5;
+console.log(result2); // NaN
+console.log(typeof result2); // number
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+****Values inside the parenthesis will be evaluated first and multiplication/division will have higher precedence than addition/subtraction. If the operators have the same precedence, then JavaScript will use associativity.***
+
+const result = (2 + 3) * 4;
+
+console.log(result); // 20
+
+const result2 = 10 - 2 + 3;
+
+console.log(result2); // 11
+
+const result3 = 2 ** 3 ** 2;
+
+console.log(result3); // 512
+
+*********************************************************
+
+let x = 5;
+
+console.log(++x); // 6
+console.log(x); // 6
+
+
+let y = 5;
+
+console.log(y++); // 5
+console.log(y); // 6
+
+let num = 5;
+
+console.log(--num); // 4
+console.log(num--); // 4
+console.log(num); // 3
+
+**************************************************************
+
+Compound Assignment Operators
+Addition Assignment (+=) Operator: This operator performs addition on the values and assigns the result to the variable.
+Subtraction Assignment (-=) Operator: This operator performs subtraction on the values and assigns the result to the variable.
+Multiplication Assignment (*=) Operator: This operator performs multiplication on the values and assigns the result to the variable.
+Division Assignment (/=) Operator: This operator performs division on the values and assigns the result to the variable.
+Remainder Assignment (%=) Operator: This operator divides a variable by the specified number and assigns the remainder to the variable.
+Exponentiation Assignment (**=) Operator: This operator raises a variable to the power of the specified number and reassigns the result to the variable.
+Booleans and Equality
+Boolean Definition: A boolean is a data type that can only have two values: true or false.
+Equality (==) Operator: This operator uses type coercion before checking if the values are equal.
+
+Strict Equality (===) Operator: This operator does not perform type coercion and checks if both the types and values are equal.
+Example Code
+console.log(5 === '5'); // false
+
+Inequality (!=) Operator: This operator uses type coercion before checking if the values are not equal.
+Strict Inequality (!==) Operator: This operator does not perform type coercion and checks if both the types and values are not equal.
+
+............................................................................................
+
+Comparison Operators
+Greater Than (>) Operator: This operator checks if the value on the left is greater than the one on the right.
+Greater Than (>=) or Equal Operator: This operator checks if the value on the left is greater than or equal to the one on the right.
+Less Than (<) Operator: This operator checks if the value on the left is less than the one on the right.
+Less Than (<=) or Equal Operator: This operator checks if the value on the left is less than or equal to the one on the right.
+
+...................................................
+
+Conditional Statements, Truthy Values, Falsy Values and the Ternary Operator
+if/else if/else: An if statement takes a condition and runs a block of code if that condition is truthy. If the condition is false, then it moves to the else if block. If none of those conditions are true, then it will execute the else clause. Truthy values are any values that result in true when evaluated in a Boolean context like an if statement. Falsy values are values that evaluate to false in a Boolean context.
+Example Code
+const score = 87;
+
+if (score >= 90) {
+ console.log('You got an A'); 
+} else if (score >= 80) {
+ console.log('You got a B'); // You got an B
+} else if (score >= 70) {
+ console.log('You got a C');
+} else {
+ console.log('You failed! You need to study more!');
+}
+Ternary Operator: This operator is often used as a shorter way to write if else statements.
+Example Code
+const temperature = 30;
+const weather = temperature > 25 ? 'sunny' : 'cool';
+
+console.log(`It's a ${weather} day!`); // It's a sunny day!
+
+...................................................................
+
+The Math Object
+The Math.random() Method: This method generates a random floating-point number between 0 (inclusive) and 1 (exclusive). This means the possible output can be 0, but it will never actually reach 1.
+The Math.max() Method: This method takes a set of numbers and returns the maximum value.
+The Math.min() Method: This method takes a set of numbers and returns the minimum value.
+The Math.ceil() Method: This method rounds a value up to the nearest whole integer.
+The Math.floor() Method: This method rounds a value down to the nearest whole integer.
+The Math.round() Method: This method rounds a value to the nearest whole integer.
+Example Code
+console.log(Math.round(2.3)); // 2
+console.log(Math.round(4.5)); // 5
+console.log(Math.round(4.8)); // 5
+
+The Math.trunc() Method: This method removes the decimal part of a number, returning only the integer portion, without rounding.
+The Math.sqrt() Method: This method will return the square root of a number.
+The Math.cbrt() Method: This method will return the cube root of a number.
+The Math.abs() Method: This method will return the absolute value of a number.
+The Math.pow() Method: This method takes two numbers and raises the first to the power of the second.
+
