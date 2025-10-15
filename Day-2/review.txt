@@ -138,3 +138,28 @@ The Math.cbrt() Method: This method will return the cube root of a number.
 The Math.abs() Method: This method will return the absolute value of a number.
 The Math.pow() Method: This method takes two numbers and raises the first to the power of the second.
 
+.............................
+https://www.freecodecamp.org/learn/full-stack-developer/review-javascript-arrays/review-javascript-arrays
+
+ref for arrays.
+
+........................................
+
+JSON.stringify(): This method is used to convert a JavaScript object into a JSON string. This is useful when you want to store or transmit data in a format that can be easily shared or transferred between systems.
+const user = {
+  name: "John",
+  age: 30,
+  isAdmin: true
+};
+
+const jsonString = JSON.stringify(user);
+console.log(jsonString); // '{"name":"John","age":30,"isAdmin":true}'
+JSON.parse(): This method converts a JSON string back into a JavaScript object. This is useful when you retrieve JSON data from a web server or localStorage and you need to manipulate the data in your application.
+const jsonString = '{"name":"John","age":30,"isAdmin":true}';
+const userObject = JSON.parse(jsonString);
+
+// result: { name: 'John', age: 30, isAdmin: true }
+console.log(userObject);
+
+........................................................................................
+https://www.freecodecamp.org/learn/full-stack-developer/review-javascript-loops/review-javascript-loops //loops
