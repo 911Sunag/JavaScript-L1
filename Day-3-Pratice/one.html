@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Current Day and Time</title>
+</head>
+<body>
+    <script>
+
+     // To get current day
+     var today = new Date();
+
+     var day = today.getDay();
+
+     var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"];
+
+     console.log(`Today is: ${daylist[day]}.`);
+
+     //To get current Time
+
+     var hour = today.getHours();
+
+     var minute = today.getMinutes();
+
+     var seconds = today.getSeconds();
+
+     var prepand = (hour >= 12 ) ? "Pm" :"Am"; //
+
+     hour = (hour >= 12) ? hour - 12 : hour;   //
+
+    
+     if(hour === 0 && prepand === 'Pm'){
+
+          if(minute === 0 && seconds === 0){
+              hour = 12;
+              prepand= "Noon";
+          }else{
+            hour= 12;
+            prepand = 'Pm';
+          }
+     }
+
+      if(hour === 0 && prepand === 'Am'){
+
+          if(minute === 0 && seconds === 0){
+              hour = 12;
+              prepand= "Noon";
+          }else{
+            hour= 12;
+            prepand = 'Am';
+          }
+     }
+
+     console.log(`Current time: ${hour} ${prepand} : ${minute} mins : ${seconds} sec`);
+
+
+
+
+
+    </script>
+</body>
+</html>
